@@ -17,7 +17,7 @@ elif [ $choice -eq 2 ]; then
 	du -ah ..|sort -rh
 	read -p "Want More?(yes/no)" more
 elif [ $choice -eq 3 ]; then
-	read -p"Which extension would like to seeeeee?" extension
+	read -p "Which extension would like to seeeeee?" extension
 	num=`find .. -name "*.$extension"|wc -l`
 	echo "There are "$num" files with the extention "$extension" in repo"
 	read -p "Want More?(yes/no)" more
