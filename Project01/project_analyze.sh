@@ -14,7 +14,7 @@ if [ $choice -eq 1 ]; then
 	git checkout $commit
 	read -p "Want More?(yes/no)" more
 elif [ $choice -eq 2 ]; then
-	du -ah ..|sort -rh
+	find .. -type f -exec du -ah {} + |sort -rh
 	read -p "Want More?(yes/no)" more
 elif [ $choice -eq 3 ]; then
 	read -p "Which extension would like to seeeeee?" extension
