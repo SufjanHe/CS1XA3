@@ -40,7 +40,7 @@ Description: Users give 2 extension and can choose Change or Restore:
 
 Execution: execute this feature by inputting 4 when excuting the script CS1XA3/Project01/project_analyze; then choose Change or Restore. If choosing Change, input two extension with which you would like to convert from one to the other.
 
-## Custom Feature 01: Number Game/History
+## Custom Feature 02: Number Game/History
 Description: Users can choose Game or History:
 * If the user selects Game: the user is  going to play the Number Game, to guess a randomly generated number in 0~100.
   * When playing the game, hints of "too high", "too low" will be given
