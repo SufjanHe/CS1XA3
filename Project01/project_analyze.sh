@@ -6,6 +6,7 @@ menu(){
 	echo "Execute 'File Type Count' by typing 3"
 	read -p "I wanna doooooo:" choice
 }
+
 menu
 
 if [ $choice -eq 1 ]; then
