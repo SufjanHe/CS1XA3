@@ -44,7 +44,7 @@ Description: Users give 2 extension and can choose Change or Restore:
 * If the user selects Restore:Restore each file to its original extension
 
 Execution: execute this feature by inputting 4 when excuting the script CS1XA3/Project01/project_analyze; then choose Change or Restore. If choosing Change, input two extension with which you would like to convert from one to the other.\
-Reference: some code was taken from [[https://stackoverflow.com/questions/965053/extract-filename-and-extension-in-bash]],[[https://stackoverflow.com/questions/6121091/get-file-directory-path-from-file-path/6121114]],[[https://stackoverflow.com/questions/12152626/how-can-i-remove-the-extension-of-a-filename-in-a-shell-script/12152997]],[[https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files]] and [[https://osr507doc.xinuos.com/en/OSTut/Reading_just_the_first_or_last_lines_of_a_file.html]]
+Reference: some code was taken from [[https://stackoverflow.com/questions/965053/extract-filename-and-extension-in-bash], [https://stackoverflow.com/questions/6121091/get-file-directory-path-from-file-path/6121114], [https://stackoverflow.com/questions/12152626/how-can-i-remove-the-extension-of-a-filename-in-a-shell-script/12152997], [https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files], [https://osr507doc.xinuos.com/en/OSTut/Reading_just_the_first_or_last_lines_of_a_file.html]]
 
 ## Custom Feature 02: Number Game/History
 Description: Users can choose Game or History:
