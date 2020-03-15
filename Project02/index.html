@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>my CV</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+        box-sizing: border-box;
+}
+
+body {
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+section0:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+header {
+        float: left;
+        width: 75%;
+        height: 200px;
+        background: #624;
+        padding: 20px;
+        color: white;
+}
+
+contact {
+        float: left;
+        padding: 20px;
+        width: 25%;
+        background-color: #624;
+        height: 200px;
+        color: white;
+}
+
+nav {
+        float: left;
+        width: 30%;
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+}
+
+article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 500px;
+}
+
+section:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+footer {
+        background-color: #888;
+        padding: 20px;
+        text-align: left;
+        color: white;
+}
+
+.btn {
+  	border: none;
+  	background-color: inherit;
+  	padding: 14px 28px;
+  	font-size: 16px;
+  	cursor: pointer;
+  	display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+.mac {font-family:courier;color:#634;font-size:150%;}
+
+@media (max-width: 600px) {
+        header, contact {
+        width: 100%;
+        height: auto;
+        }
+
+        nav, article {
+        width: 100%;
+        height: auto;
+        }
+}
+</style>
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+  
+</head>
+<body>
+
+<section0>
+        <header>
+                <h1 id="me" style="font-size:300%;">Zirui He</h1>
+        </header>
+
+        <contact>
+	<p> </p>
+        <li>437-971-1366</li>
+        <p> </p>
+        <li>hez66@mcmaster.ca</li>
+        <p> </p>
+        <li>github.com/SufjanHe</li>
+        </contact>
+</section0>
+
+<footer>
+        <h1 style="font-family:courier;color:#634;font-size:200%;">HIGHLIGHTS OF QUALIFICATIONS</h1>
+        <li>Currently enrolled in level 1 of the 4-year Honours Computer Science co-op program at McMaster University</li>
+        <p> </p>
+        <li>Strong analytical and problem solving skills established through course work and project work</li>
+        <p> </p>
+        <li>Excellent teamwork skills developed while communicating with peers</li>
+        <p> </p>
+</footer>
+
+<section>
+        <nav>
+        	<button class="btn mac" id="butt1"> Education </button>
+                <button class="btn mac" id="butt2">EXPERIENCE </button>
+                <button class="btn mac" id="butt4">SKILLS </button>
+                <button class="btn mac" id="butt5">PROJECTS </button>
+                <button class="btn mac" id="butt3">EXTRACURRICULAR ACTIVITIES </button>
+        </nav>
+
+        <article>
+                <div class="edu">
+                	<h1 style="font-family:courier;color:#634;font-size:200%;">EDUCATION</h1>
+                	<h4>Bachelor of Applied Science, Honours
+Computer Science</h4>
+                    	<p>McMaster University, Hamilton ON</p>
+                	<li>Achieved a cumulative GPA of 11.6 on a 12.0 scale</li>
+                	<li>Awarded the McMaster entrance scholarship for achieving an average
+over 95% in high school</li>
+                    	<h4>Core Courses:</h4>
+                	<li>Computer Science Practice & Experience</li>
+                	<li>Introduction to Programming</li>
+                	<li>Introduction to Computational Thinking</li>
+                </div>
+                
+                <div class="exp">
+                	<h1 style="font-family:courier;color:#634;font-size:200%;">EXPERIENCE</h1>
+                	<h4>Computer Science Co-op Student</h4>
+                	<p>(no job taken yet)</p>
+                </div>
+                
+                <div class="ext">
+                	<h1 style="font-family:courier;color:#634;font-size:200%;">EXTRACURRICULAR ACTIVITIES</h1>
+                	<h4>Part-time CS TA</h4>
+                	<p>Significant communication and organizational skills developed during working for EasyEdu</p>
+                </div>
+                
+                <div class="skill">
+                	<h1 style="font-family:courier;color:#634;font-size:200%;">SKILLS</h1>
+                	<h4>Languages:</h4>
+                	<li>Python</li>
+                	<li>Haskell</li>
+                	<li>Java</li>
+                	<li>JavaScript</li>
+                	<li>HTML</li>
+                	<li>Matlab</li>
+                	<h4>Frameworks:</h4>
+                	<li>jQuery</li>
+                	<h4>Tools:</h4>
+                	<li>git</li>
+                	<li>bash</li>
+                </div>
+                
+                <div class="pro">
+                	<h1 style="font-family:courier;color:#634;font-size:200%;">PROJECTS</h1>
+                	<p>(no yet)</p>
+                </div>
+        </article>
+</section>
+
+<script>
+    	$(".exp").hide()
+    	$(".ext").hide()
+    	$(".skill").hide()
+    	$(".pro").hide()
+	$("#butt1").click(function(){
+    		$(".exp").hide()
+        	$(".ext").hide()
+        	$(".skill").hide()
+        	$(".pro").hide()
+    		$(".edu").fadeIn()
+    	})
+    	$("#butt2").click(function(){
+    		$(".edu").hide()
+    		$(".ext").hide()
+    		$(".skill").hide()
+    		$(".pro").hide()
+    		$(".exp").fadeIn()
+    	})
+    	$("#butt3").click(function(){
+    		$(".edu").hide()
+    		$(".exp").hide()
+    		$(".skill").hide()
+    		$(".pro").hide()
+    		$(".ext").fadeIn()
+    	})
+    	$("#butt4").click(function(){
+    		$(".exp").hide()
+        	$(".ext").hide()
+        	$(".edu").hide()
+        	$(".pro").hide()
+    		$(".skill").fadeIn()
+    	})
+    	$("#butt5").click(function(){
+    		$(".edu").hide()
+    		$(".exp").hide()
+    		$(".ext").hide()
+    		$(".skill").hide()
+    		$(".pro").fadeIn()
+    	})	
+</script>
+
+</body>
+</html>
+
