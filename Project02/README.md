@@ -12,8 +12,8 @@ This webpage is ZIRUI HE's custom CV with my personal information including
 
 ## Custom Javascript Code
 Description: you can click buttons on the left bar to see what you'd like to know about me on the right side\
-Execution: click buttons on the left bar\
+Execution: click buttons on the left bar
 
 ## References
 - The html document used the following HTML Template from w3schools: [https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float]
-- Some other references: [[https://www.w3schools.com/howto/howto_css_text_buttons.asp],[https://www.w3schools.com/jquery/jquery_ref_effects.asp]]
+- Some other references: [[https://www.w3schools.com/howto/howto_css_text_buttons.asp], [https://www.w3schools.com/jquery/jquery_ref_effects.asp]]
