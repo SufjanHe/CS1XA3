@@ -11,8 +11,8 @@ This webpage is ZIRUI HE's custom CV with my personal information including
 1. extracurricular activity
 
 ## Custom Javascript Code
-Description: you can click buttons on the left bar to see what you'd like to know about me on the right side\
-Execution: click buttons on the left bar
+Description: you can click buttons on the left bar to see what you'd like to know about me on the right side.\
+Execution: click buttons on the left bar to choose what you want to know about me. You can see my selfie after clicking 2 buttons 'projects' and 'you can see my selfie'.
 
 ## References
 - The html document used the following HTML Template from w3schools: [https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float]

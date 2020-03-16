@@ -90,6 +90,7 @@ footer {
         height: auto;
         }
 }
+
 </style>
 
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
@@ -100,7 +101,7 @@ footer {
 
 <section0>
         <header>
-                <h1 id="me" style="font-size:300%;">Zirui He</h1>
+                <h1 style="font-size:300%;">Zirui He</h1>
         </header>
 
         <contact>
@@ -109,7 +110,7 @@ footer {
         <p> </p>
         <li>hez66@mcmaster.ca</li>
         <p> </p>
-        <li>github.com/SufjanHe</li>
+        <li><a href="https://github.com/SufjanHe">github.com/SufjanHe</a></li>
         </contact>
 </section0>
 
@@ -151,6 +152,7 @@ over 95% in high school</li>
                 	<h1 style="font-family:courier;color:#634;font-size:200%;">EXPERIENCE</h1>
                 	<h4>Computer Science Co-op Student</h4>
                 	<p>(no job taken yet)</p>
+			<img src="pig.jpeg" width="300" height="300">
                 </div>
                 
                 <div class="ext">
@@ -177,7 +179,8 @@ over 95% in high school</li>
                 
                 <div class="pro">
                 	<h1 style="font-family:courier;color:#634;font-size:200%;">PROJECTS</h1>
-                	<p>(no yet)</p>
+                	<p>(no yet) <button class="btn" id="selfie">but you can see my selfie XD</button> <= Click</p>
+			<img src="selfie.jpeg" class="sf" width="230" height="300">
                 </div>
         </article>
 </section>
@@ -187,6 +190,8 @@ over 95% in high school</li>
     	$(".ext").hide()
     	$(".skill").hide()
     	$(".pro").hide()
+	$(".sf").hide()
+
 	$("#butt1").click(function(){
     		$(".exp").hide()
         	$(".ext").hide()
@@ -221,9 +226,11 @@ over 95% in high school</li>
     		$(".ext").hide()
     		$(".skill").hide()
     		$(".pro").fadeIn()
-    	})	
+    	})
+	$("#selfie").click(function(){
+                $(".sf").fadeToggle()
+	})
 </script>
 
 </body>
 </html>
-
