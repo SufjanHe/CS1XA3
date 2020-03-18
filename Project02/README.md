@@ -11,7 +11,7 @@ This webpage is ZIRUI HE's CV including
 1. awards
 
 ## Custom Javascript Code
-Description: you can click buttons on the navigation bar to change the background color\
+Description: you can click the On/Off FlipSwitch on the navigation bar to change the background color\
 Execution: click buttons on the navigation bar to switch the nav bar color.
 
 ## References
