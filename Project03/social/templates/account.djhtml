@@ -9,6 +9,16 @@
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Change Password</h6>
                     <!--                     TODO Objective 3: Add Password Change Form -->
+                    <form class="modal-content animate" method="post" action="{% url 'social:account_view' %}">
+                        {% csrf_token %}
+                        <p><b>Old Password</b></p>
+                        <input placeholder="Enter Password" name="opassword" required>
+                        <p><b>New Password</b></p>
+                        <input placeholder="Enter Password" name="npassword" required>
+                        <p><b>Confirm Password</b></p>
+                        <input placeholder="Enter Password" name="cpassword" required>
+                        <p><input type="submit" value='Change'></p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -19,6 +29,18 @@
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Update Info</h6>
                     <!--                     TODO Objective 3: Add User Info Update Forms -->
+                    <form class="modal-content animate" method="post" action="{% url 'social:account_view' %}">
+                        {% csrf_token %}
+                        <p><b>My Employment:</b></p>
+                        <input placeholder={{user_info.employment}} name="employment" required>
+                        <p><b>My Address:</b></p>
+                        <input placeholder={{user_info.location}} name="location" required>
+                        <p><b>My Birthday:</b></p>
+                        <input placeholder="YYYY-MM-DD" name="birthday" required>
+                        <p><b>My Interests:</b></p>
+                        <input name="interest" required>
+                        <p><button type="submit">Update</button></p>
+                    </form>
                 </div>
             </div>
         </div>
