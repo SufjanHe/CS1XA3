@@ -65,12 +65,16 @@ def account_view(request):
                     request.session['failed'] = False
                     return redirect('login:login_view')
             else:
-                user_info.employment = request.POST["employment"]
-                user_info.location = request.POST["location"]
-                user_info.birthday = request.POST["birthday"]
-                new_interest=models.Interest(label=request.POST["interest"])
-                new_interest.save()
-                user_info.interests.add(new_interest)
+                if request.POST["employment"]:
+                    user_info.employment = request.POST["employment"]
+                if request.POST["location"]:
+                    user_info.location = request.POST["location"]
+                if request.POST["birthday"]:
+                    user_info.birthday = request.POST["birthday"]
+                if request.POST["interest"]:
+                    new_interest=models.Interest(label=request.POST["interest"])
+                    new_interest.save()
+                    user_info.interests.add(new_interest)
                 try:
                     user_info.save()
                 except:
