@@ -147,7 +147,7 @@ def like_view(request):
             post = models.Post.objects.get(id=postID)
             if user_info not in post.likes.all():
                 post.likes.add(user_info)
-                post.save()
+
             # return status='success'
             return HttpResponse()
         else:
