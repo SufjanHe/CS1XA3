@@ -26,8 +26,13 @@
             <hr class="w3-clear">
 
             <!-- TODO Objective 10: Add Post id and likes count -->
+                {% if user_info not in p.likes.all %}
                     <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom like-button" id="post-{{ p.id }}">
                         <i class="fa fa-thumbs-up"></i>  Like</button>
+                {% else %}
+                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom w3-disabled" id="post-{{ p.id }}">
+                        <i class="fa fa-thumbs-up"></i>   Like</button>
+                {% endif %}
             <span class="w3-button w3-theme-d1 w3-margin-bottom">{{ p.likes.count }} Likes</span>
         </div>
         {% endfor %}

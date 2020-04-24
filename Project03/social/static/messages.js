@@ -4,7 +4,7 @@
    */
 function submitPost(event) {
     // TODO Objective 8: send contents of post-text via AJAX Post to post_submit_view (reload page upon success)
-    let postContent=event.target.parentNode.children[1].textContent;
+    let postContent= $("#post-text").html();
     let json_data={"postContent": postContent}
     let url_path = post_submit_url;
 
