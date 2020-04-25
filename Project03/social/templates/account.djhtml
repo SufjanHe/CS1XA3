@@ -9,6 +9,11 @@
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Change Password</h6>
                     <!--                     TODO Objective 3: Add Password Change Form -->
+                    <form class="modal-content animate" method="post" action="{% url 'social:account_view' %}">
+                        {% csrf_token %}
+                        {{ form }}
+                        <p><input type="submit" value='Change'></p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -19,6 +24,18 @@
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Update Info</h6>
                     <!--                     TODO Objective 3: Add User Info Update Forms -->
+                    <form class="modal-content animate" method="post" action="{% url 'social:account_view' %}">
+                        {% csrf_token %}
+                        <p><b>My Employment:</b></p>
+                        <input placeholder={{user_info.employment}} name="employment">
+                        <p><b>My Address:</b></p>
+                        <input placeholder={{user_info.location}} name="location">
+                        <p><b>My Birthday:</b></p>
+                        <input placeholder="YYYY-MM-DD" name="birthday">
+                        <p><b>My Interests:</b></p>
+                        <input name="interest">
+                        <p><button type="submit">Update</button></p>
+                    </form>
                 </div>
             </div>
         </div>

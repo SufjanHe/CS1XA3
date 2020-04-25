@@ -2,6 +2,18 @@
 
 {% block title %}Signup Page{% endblock %}
 
+{% block css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'w3login.css' %}">
+{% endblock %}
+
 {% block middle_column %}
-    <!-- TODO Objective 1: implement signup form -->
+    <form method="post" action="{% url 'login:signup_view' %}">
+        {% csrf_token %}
+        {{ signup_form }}
+        <button type="submit">Creat</button>
+    </form>
+    {% if failed %}
+	<p style='color:red'> username has been taken or invaild password </p>
+    {% endif %}
 {% endblock %}
