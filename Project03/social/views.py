@@ -50,16 +50,17 @@ def account_view(request):
                         (if handled in this view)
     """
     if request.user.is_authenticated:
-        form = None
-
         user_info = models.UserInfo.objects.get(user=request.user)
+        form = PasswordChangeForm(request.user)
+
         # TODO Objective 3: Create Forms and Handle POST to Update UserInfo / Password
         if request.method == "POST":
-            if "npassword" in request.POST:
-                opassword = request.POST['opassword']
-                npassword = request.POST["npassword"]
-                cpassword = request.POST["cpassword"]
-                if npassword == cpassword and authenticate(request,username=user_info.user,password=opassword) is not None:
+            form = PasswordChangeForm(request.user,request.POST)
+            if "old_password" in request.POST or "new_password1" in request.POST or "new_password2" in request.POST:
+                if form.is_valid():
+                    opassword=form.cleaned_data.get("old_password")
+                    npassword=form.cleaned_data.get("new_password1")
+                    user=authenticate(request,username=user_info.user,password=opassword)
                     request.user.set_password(npassword)
                     request.user.save()
                     request.session['failed'] = False

@@ -11,12 +11,7 @@
                     <!--                     TODO Objective 3: Add Password Change Form -->
                     <form class="modal-content animate" method="post" action="{% url 'social:account_view' %}">
                         {% csrf_token %}
-                        <p><b>Old Password</b></p>
-                        <input placeholder="Enter Password" name="opassword" required>
-                        <p><b>New Password</b></p>
-                        <input placeholder="Enter Password" name="npassword" required>
-                        <p><b>Confirm Password</b></p>
-                        <input placeholder="Enter Password" name="cpassword" required>
+                        {{ form }}
                         <p><input type="submit" value='Change'></p>
                     </form>
                 </div>
